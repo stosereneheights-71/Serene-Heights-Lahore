@@ -21,9 +21,14 @@ const projectLinks = [
 
 const contactInfo = [
   {
+    icon: '/assets/footer/call.png',
+    text: '042 111 111 744',
+    href: 'tel:042111111744',
+  },
+  {
     icon: '/assets/footer/call.svg',
-    text: '+92 304 1111106',
-    href: 'tel:03041111106',
+    lines: ['0300 8497999', '0321 4979447'],
+    href: 'tel:03008497999',
   },
   {
     icon: '/assets/footer/sms.svg',
@@ -122,14 +127,22 @@ export default function Footer() {
                 {contactInfo.map((item, index) => (
                   <Link
                     key={index}
-                    href={item.href}
+                    href={item.href? item.href : '#'}
                     className="flex items-center gap-[12px] text-[#E8E8E8] text-[14px] md:text-[16px] leading-normal hover:text-[#DFBF7F] transition-colors"
                     style={{ fontFamily: '"Helvetica Neue", Arial, sans-serif', fontWeight: 400 }}
                   >
                     <div className="relative w-5 h-5 md:w-[24px] md:h-[24px] shrink-0">
                       <Image src={item.icon} alt="" fill className="object-contain" />
                     </div>
-                    <span>{item.text}</span>
+                    {item.lines ? (
+                      <span className="flex flex-col gap-[4px]">
+                        {item.lines.map((line) => (
+                          <span key={line}>{line}</span>
+                        ))}
+                      </span>
+                    ) : (
+                      <span>{item.text}</span>
+                    )}
                   </Link>
                 ))}
               </div>
