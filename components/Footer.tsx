@@ -20,15 +20,20 @@ const projectLinks = [
 ];
 
 const contactInfo = [
+  // {
+  //   icon: '/assets/footer/call.png',
+  //   text: '042 111 111 744',
+  //   href: 'tel:042111111744',
+  // },
   {
-    icon: '/assets/footer/call.png',
-    text: '042 111 111 744',
-    href: 'tel:042111111744',
+    icon: '/assets/footer/call.svg',
+    lines: ['0304-1111106', 'For Corporate Office / Commercial'],
+    href: 'tel:0304-1111106',
   },
   {
     icon: '/assets/footer/call.svg',
-    lines: ['0300 8497999', '0321 4979447'],
-    href: 'tel:03008497999',
+    lines: ['0300-8497999', 'For Co-Working / Hotel Apartments'],
+    href: 'tel:0300-8497999',
   },
   {
     icon: '/assets/footer/sms.svg',
