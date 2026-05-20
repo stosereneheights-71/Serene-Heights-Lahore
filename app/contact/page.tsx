@@ -105,18 +105,55 @@ export default function ContactPage() {
           {/* Contact Info - Center on mobile, Right on desktop */}
           <div className="flex flex-col gap-4 md:gap-4 text-right items-end justify-center md:flex-initial">
             <div className="flex flex-col gap-2">
-            <div className="flex flex-col gap-1">
-              <div
-                style={{
-                  fontFamily: "Helvetica Neue, Arial, sans-serif",
-                  fontWeight: 500,
-                  fontSize: 16,
-                  lineHeight: "100%",
-                  letterSpacing: "0%",
-                  color: "#DFBF7F",
-                }}
-              >
-                0304-1111106 For Corporate Office Commercial
+              <div className="flex flex-col gap-1">
+                <div
+                  style={{
+                    fontFamily: "Helvetica Neue, Arial, sans-serif",
+                    fontWeight: 500,
+                    fontSize: 16,
+                    lineHeight: "100%",
+                    letterSpacing: "0%",
+                    color: "#DFBF7F",
+                  }}
+                >
+                  0304-1111106
+                </div>
+                <div
+                  style={{
+                    fontFamily: "Helvetica Neue, Arial, sans-serif",
+                    fontWeight: 500,
+                    fontSize: 16,
+                    lineHeight: "100%",
+                    letterSpacing: "0%",
+                    color: "#DFBF7F",
+                  }}
+                >
+                  For Corporate Office / Commercial
+                </div>
+                <div
+                  style={{
+                    fontFamily: "Helvetica Neue, Arial, sans-serif",
+                    fontWeight: 500,
+                    fontSize: 16,
+                    lineHeight: "100%",
+                    letterSpacing: "0%",
+                    color: "#DFBF7F",
+                  }}
+                >
+                  0300-8497999
+                </div>
+                <div
+                  style={{
+                    fontFamily: "Helvetica Neue, Arial, sans-serif",
+                    fontWeight: 500,
+                    fontSize: 16,
+                    lineHeight: "100%",
+                    letterSpacing: "0%",
+                    color: "#DFBF7F",
+                  }}
+                >
+                  For Co-Working / Hotel Apartments
+                </div>
               </div>
               <div
                 style={{
@@ -128,21 +165,8 @@ export default function ContactPage() {
                   color: "#DFBF7F",
                 }}
               >
-                0300-8497999 For CoWorking / Hotel Apartments
+                info@sereneheightslahore.com
               </div>
-            </div>
-            <div
-              style={{
-                fontFamily: "Helvetica Neue, Arial, sans-serif",
-                fontWeight: 500,
-                fontSize: 16,
-                lineHeight: "100%",
-                letterSpacing: "0%",
-                color: "#DFBF7F",
-              }}
-            >
-              info@sereneheightslahore.com
-            </div>
             </div>
             <div
               style={{
