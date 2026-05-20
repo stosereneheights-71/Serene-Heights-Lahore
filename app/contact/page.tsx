@@ -116,7 +116,7 @@ export default function ContactPage() {
                   color: "#DFBF7F",
                 }}
               >
-                0304-1111106 ( For Corporate office Commercial )
+                0304-1111106 For Corporate Office Commercial
               </div>
               <div
                 style={{
@@ -128,7 +128,7 @@ export default function ContactPage() {
                   color: "#DFBF7F",
                 }}
               >
-                0300 8497999 ( For Co working/ Hotel Apartments )
+                0300-8497999 For CoWorking / Hotel Apartments
               </div>
             </div>
             <div
