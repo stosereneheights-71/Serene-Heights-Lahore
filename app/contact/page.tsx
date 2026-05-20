@@ -105,18 +105,6 @@ export default function ContactPage() {
           {/* Contact Info - Center on mobile, Right on desktop */}
           <div className="flex flex-col gap-4 md:gap-4 text-right items-end justify-center md:flex-initial">
             <div className="flex flex-col gap-2">
-              <div
-              style={{
-                fontFamily: "Helvetica Neue, Arial, sans-serif",
-                fontWeight: 500,
-                fontSize: 16,
-                lineHeight: "100%",
-                letterSpacing: "0%",
-                color: "#DFBF7F",
-              }}
-            >
-              042 111 111 744
-            </div>
             <div className="flex flex-col gap-1">
               <div
                 style={{
@@ -128,7 +116,7 @@ export default function ContactPage() {
                   color: "#DFBF7F",
                 }}
               >
-                0300 8497999
+                0304-1111106 ( For Corporate office Commercial )
               </div>
               <div
                 style={{
@@ -140,7 +128,7 @@ export default function ContactPage() {
                   color: "#DFBF7F",
                 }}
               >
-                0321 4979447
+                0300 8497999 ( For Co working/ Hotel Apartments )
               </div>
             </div>
             <div
