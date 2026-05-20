@@ -104,7 +104,7 @@ export default function ContactPage() {
 
           {/* Contact Info - Center on mobile, Right on desktop */}
           <div className="flex flex-col gap-4 md:gap-4 text-right items-end justify-center md:flex-initial">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-1">
                 <div
                   style={{
@@ -130,6 +130,8 @@ export default function ContactPage() {
                 >
                   For Corporate Office / Commercial
                 </div>
+              </div>
+              <div className="flex flex-col gap-1">
                 <div
                   style={{
                     fontFamily: "Helvetica Neue, Arial, sans-serif",
@@ -155,31 +157,33 @@ export default function ContactPage() {
                   For Co-Working / Hotel Apartments
                 </div>
               </div>
-              <div
-                style={{
-                  fontFamily: "Helvetica Neue, Arial, sans-serif",
-                  fontWeight: 500,
-                  fontSize: 16,
-                  lineHeight: "100%",
-                  letterSpacing: "0%",
-                  color: "#DFBF7F",
-                }}
-              >
-                info@sereneheightslahore.com
+              <div className="flex flex-col gap-1">
+                <div
+                  style={{
+                    fontFamily: "Helvetica Neue, Arial, sans-serif",
+                    fontWeight: 500,
+                    fontSize: 16,
+                    lineHeight: "100%",
+                    letterSpacing: "0%",
+                    color: "#DFBF7F",
+                  }}
+                >
+                  info@sereneheightslahore.com
+                </div>
+                <div
+                  style={{
+                    fontFamily: "Helvetica Neue, Arial, sans-serif",
+                    fontWeight: 500,
+                    fontSize: 16,
+                    lineHeight: "100%",
+                    letterSpacing: "0%",
+                    textAlign: "right",
+                    color: "#FFFFFF",
+                  }}
+                >
+                  sereneheightslahore.com
+                </div>
               </div>
-            </div>
-            <div
-              style={{
-                fontFamily: "Helvetica Neue, Arial, sans-serif",
-                fontWeight: 500,
-                fontSize: 16,
-                lineHeight: "100%",
-                letterSpacing: "0%",
-                textAlign: "right",
-                color: "#FFFFFF",
-              }}
-            >
-              sereneheightslahore.com
             </div>
           </div>
         </div>
