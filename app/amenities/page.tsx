@@ -117,12 +117,12 @@ export default function AmenitiesPage() {
           {/* Right image column */}
           <div className="relative w-full h-[400px] sm:h-[500px] md:h-auto md:min-h-[700px]">
             <Image
-              src="/assets/amenities/amenities-1-new.png"
+              src="/assets/amenities/amenities-1-new.jpg"
               alt="Amenities architecture illustration"
               fill
               className="object-cover object-center"
-              priority
-              // sizes="(max-width: 1024px) 100vw, 40vw"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
             />
           </div>
         </div>
@@ -245,12 +245,12 @@ export default function AmenitiesPage() {
           {/* Right image - 60% */}
           <div className="lg:col-span-3 relative w-full h-[854px] lg:h-full lg:min-h-[854px] order-1 lg:order-2">
             <Image
-              src="/assets/amenities/amenities-2-new.png"
+              src="/assets/amenities/amenities-2-new.jpg"
               alt="Building architecture"
               fill
               className="object-cover object-center"
-              priority
-              // sizes="(max-width: 1024px) 100vw, 60vw"
+              sizes="(max-width: 1024px) 100vw, 60vw"
+              loading="lazy"
             />
           </div>
         </div>

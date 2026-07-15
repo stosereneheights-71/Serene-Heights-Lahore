@@ -33,6 +33,8 @@ export default function ImageWithTextSection({
             src={imageUrl}
             alt={imageAlt}
             className="object-fill w-full h-full"
+            loading="lazy"
+            decoding="async"
           />
           {/* Overlay Text */}
           {imageOverlayText && (

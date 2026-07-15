@@ -56,11 +56,12 @@ export default function Home() {
       <section className="relative w-full bg-white">
         <div className="relative h-screen min-h-[600px] overflow-hidden">
           <Image
-            src="/assets/home/building-2-new.png"
+            src="/assets/home/building-prime.jpg"
             alt="Serene Heights - prime address"
-            quality={75}
+            quality={80}
             fill
             className="object-cover object-center"
+            sizes="100vw"
             priority
           />
 
@@ -90,7 +91,7 @@ export default function Home() {
             OUR PROJECT<br />LOCATION
           </h2>
           <p className="proforma-medium text-[18px] leading-relaxed mb-2" style={{ color: '#dfbf7f' }}>
-            Strategically located on Gulberg Main Boulevard, this 19-story commercial high-rise sits
+            Strategically located on Gulberg Main Boulevard, this 21-story commercial high-rise sits
             <span className="text-white font-normal"> within walking distance of Lahore’s Central Business District, placing it at the centre of the city’s most active commercial zone.</span>
           </p>
         </div>
@@ -132,7 +133,7 @@ export default function Home() {
             <div className="celine-h5 text-white mb-4 project-overlay-title" style={{ letterSpacing: 0 }}>OUR PROJECT LOCATION</div>
             <div className="proforma-medium text-[18px] leading-relaxed project-overlay-desc">
               <span className="text-[#DFBF7F]">
-                Strategically located on Gulberg Main Boulevard, this 19-story commerical high-rise sits{" "}
+                Strategically located on Gulberg Main Boulevard, this 21-story commercial high-rise sits{" "}
               </span>
               <span className="text-white">
                 within walking distance of Lahore’s Central Business District, placing it at the centre of the city’s most active commercial zone.
@@ -151,8 +152,7 @@ export default function Home() {
               fill
               sizes="100vw"
               className="object-contain object-bottom"
-              priority
-            // quality={100}
+              loading="lazy"
             />
           </div>
           {/* Desktop image: object-contain for md/lg, object-cover for xl+, fills section height */}
@@ -163,8 +163,7 @@ export default function Home() {
               fill
               sizes="900px"
               className="object-contain xl:object-cover object-center"
-              priority
-            // quality={100}
+              loading="lazy"
             />
           </div>
         </div>
@@ -174,22 +173,39 @@ export default function Home() {
       <section className="relative w-full bg-white md:h-screen md:grid md:grid-cols-2 md:overflow-hidden">
         {/* Left half: mobile stacked block + desktop split layers */}
         <div className="relative w-full md:h-full">
-          {/* Mobile: 50/50 split with image overlapping into teal */}
+          {/* Mobile: 50/50 split — headline over white, tagline over teal */}
           <div className="md:hidden relative w-full h-[88vh]">
             <div className="absolute top-0 left-0 w-full h-1/2 bg-white z-0" />
             <div className="absolute bottom-0 left-0 w-full h-1/2 bg-[#003C54] z-0" />
 
-            <div className="absolute left-1/2 -translate-x-1/2 top-4 w-[90%] h-[68%] z-10">
-              <Image
-                src="/assets/home/building-4-new.png"
-                alt="Building Side View"
-                fill
-                className="object-cover object-top rounded-none"
-                priority
-              />
+            {/* Headline in white top area */}
+            <div className="absolute left-8 right-8 top-0 h-1/2 z-10 flex flex-col justify-center">
+              <div
+                className="mb-4"
+                style={{
+                  fontFamily: "Proforma, sans-serif",
+                  fontWeight: 400,
+                  fontSize: "13px",
+                  letterSpacing: "0.28em",
+                  color: "#DFBF7F",
+                }}
+              >
+                GULBERG MAIN BOULEVARD
+              </div>
+              <div
+                style={{
+                  fontFamily: "Celine Sans Regular, sans-serif",
+                  fontWeight: 400,
+                  fontSize: "clamp(34px, 11vw, 52px)",
+                  lineHeight: "1.05",
+                  color: "#003C54",
+                }}
+              >
+                A LANDMARK<br />ADDRESS FOR<br />BUSINESS
+              </div>
             </div>
 
-            <div className="absolute left-8 bottom-8 z-20 max-w-[50%]">
+            <div className="absolute left-8 bottom-8 z-20 max-w-[70%]">
               <div className="proforma-400 text-[17px] leading-snug text-[#DFBF7F]">
                 A landmark commercial investment in one of Lahore’s most sought after business districts
               </div>
@@ -201,19 +217,35 @@ export default function Home() {
           {/* Desktop bottom half background (teal) */}
           <div className="hidden md:block absolute bottom-0 left-0 w-full h-1/2 bg-[#003C54] z-0" />
 
-          {/* Desktop left image: centered horizontally, slightly lowered */}
-          <div className="hidden md:block absolute left-1/2 -translate-x-1/2 w-[88%] md:h-[76%] lg:h-[74%] xl:h-[76%] max-w-[720px] z-10 md:top-12 lg:top-10 xl:top-9">
-            <Image
-              src="/assets/home/building-4-new.png"
-              alt="Building Side View"
-              fill
-              className="object-contain object-top rounded-none"
-              priority
-            />
+          {/* Desktop headline in white top half */}
+          <div className="hidden md:flex absolute left-12 right-12 top-0 h-1/2 z-10 flex-col justify-center">
+            <div
+              className="mb-5"
+              style={{
+                fontFamily: "Proforma, sans-serif",
+                fontWeight: 400,
+                fontSize: "clamp(13px, 1vw, 16px)",
+                letterSpacing: "0.3em",
+                color: "#DFBF7F",
+              }}
+            >
+              GULBERG MAIN BOULEVARD
+            </div>
+            <div
+              style={{
+                fontFamily: "Celine Sans Regular, sans-serif",
+                fontWeight: 400,
+                fontSize: "clamp(40px, 4.4vw, 72px)",
+                lineHeight: "1.03",
+                color: "#003C54",
+              }}
+            >
+              A LANDMARK<br />ADDRESS FOR<br />BUSINESS
+            </div>
           </div>
 
           {/* Desktop bottom-left text over teal */}
-          <div className="hidden md:block absolute md:left-12 md:bottom-12 z-20 md:max-w-[300px]">
+          <div className="hidden md:block absolute md:left-12 md:bottom-12 z-20 md:max-w-[320px]">
             <div className="proforma-400 md:text-[20px] leading-snug text-[#DFBF7F]">
               A landmark commercial investment in one of Lahore’s most sought after business districts
             </div>
@@ -223,21 +255,23 @@ export default function Home() {
         {/* Right half: full-height natural image on mobile, cover on desktop */}
         <div className="relative w-full md:h-full z-0">
           <Image
-            src="/assets/home/building-8-new.png"
+            src="/assets/home/building-8-new.jpg"
             alt="Building Front View"
             width={1200}
-            height={1900}
-            quality={75}
+            height={760}
+            quality={80}
             className="md:hidden w-full h-auto object-contain"
-            priority
+            sizes="100vw"
+            loading="lazy"
           />
           <Image
-            src="/assets/home/building-8-new.png"
+            src="/assets/home/building-8-new.jpg"
             alt="Building Front View"
             fill
-            quality={75}
+            quality={80}
             className="hidden md:block object-cover object-center"
-            priority
+            sizes="50vw"
+            loading="lazy"
           />
         </div>
       </section>
@@ -310,21 +344,23 @@ export default function Home() {
         {/* Left image below on mobile */}
         <div className="relative w-full h-full order-2 md:order-1 md:w-1/2">
           <Image
-            src="/assets/home/building-6-new.png"
+            src="/assets/home/building-6-new.jpg"
             alt="Benchmark Building"
-            quality={75}
+            quality={80}
             width={1200}
-            height={1900}
+            height={760}
             className="md:hidden w-full h-auto object-contain"
-            priority
+            sizes="100vw"
+            loading="lazy"
           />
           <Image
-            src="/assets/home/building-6-new.png"
+            src="/assets/home/building-6-new.jpg"
             alt="Benchmark Building"
-            quality={75}
+            quality={80}
             fill
             className="hidden md:block object-cover object-center"
-            priority
+            sizes="50vw"
+            loading="lazy"
           />
         </div>
       </section>
@@ -334,19 +370,21 @@ export default function Home() {
         {/* Left: Building image takes ~60% width */}
         <div className="relative w-full h-full order-2 md:order-1 md:h-full">
           <Image
-            src="/assets/home/building-7-new.png"
+            src="/assets/home/building-7-new.jpg"
             alt="Serene Heights Perspective"
             width={1200}
-            height={1900}
+            height={760}
             className="md:hidden w-full h-auto object-contain"
-            priority
+            sizes="100vw"
+            loading="lazy"
           />
           <Image
-            src="/assets/home/building-7-new.png"
+            src="/assets/home/building-7-new.jpg"
             alt="Serene Heights Perspective"
             fill
             className="hidden md:block object-cover object-center"
-            priority
+            sizes="60vw"
+            loading="lazy"
           />
         </div>
 
@@ -393,13 +431,13 @@ export default function Home() {
         {/* Background image */}
         <div className="absolute inset-0 bottom-3 top-3">
           <Image
-            src="/assets/home/building-8-new.png"
+            src="/assets/home/building-brand.jpg"
             alt="Luxury that rises with purpose"
             fill
             sizes="100vw"
-            quality={75}
+            quality={80}
             className="object-cover object-center"
-            priority
+            loading="lazy"
           />
         </div>
 

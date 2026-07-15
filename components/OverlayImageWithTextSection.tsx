@@ -27,7 +27,8 @@ export default function OverlayImageWithTextSection({
           width={1000}
           height={1000}
           className="object-cover object-center md:object-fill w-full h-screen md:h-full"
-          priority
+          loading="lazy"
+          sizes="100vw"
         />
       </div>
 
@@ -42,7 +43,8 @@ export default function OverlayImageWithTextSection({
               alt={overlayAlt}
               fill
               className="object-contain"
-              priority
+              loading="lazy"
+              sizes="360px"
             />
           </div>
 

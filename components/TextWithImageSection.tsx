@@ -140,6 +140,8 @@ export default function TextWithImageSection({
             width={1000}
             height={1000}
             className="object-cover md:object-fill w-full h-screen md:h-full"
+            loading="lazy"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
       </div>

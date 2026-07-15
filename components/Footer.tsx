@@ -14,6 +14,7 @@ const quickLinks = [
 const projectLinks = [
   { name: 'Building Configuration', href: '/the-project#building-configuration' },
   { name: 'Commercial Floors', href: '/the-project#commercial-floors' },
+  { name: 'Co-Working Floors', href: '/the-project#co-working' },
   { name: 'Hotel Apartments', href: '/the-project#hotel-apartments' },
   { name: 'Architecture', href: '/amenities#architecture' },
   { name: 'Amenities & Services', href: '/amenities#amenities-services' },
@@ -72,7 +73,7 @@ export default function Footer() {
               className="text-[#E8E8E8] text-[16px] leading-normal"
               style={{ fontFamily: '"Helvetica Neue", Arial, sans-serif', fontWeight: 400 }}
             >
-              A landmark 19-storey mixed-use commercial development on Gulberg Main Boulevard, Lahore.
+              A landmark 21-storey mixed-use commercial development on Gulberg Main Boulevard, Lahore.
             </p>
           </div>
 

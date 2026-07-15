@@ -34,7 +34,8 @@ export default function BuildingConfigurationSection({
           alt="Building Configuration"
           fill
           className="object-cover object-center lg:object-fill opacity-40 lg:opacity-100"
-          priority
+          loading="lazy"
+          sizes="100vw"
         />
       </div>
 

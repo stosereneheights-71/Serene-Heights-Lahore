@@ -16,8 +16,8 @@ export const amenities = [
     title: "Access, Mobility & Parking",
     items: [
       "High-speed elevators with destination control",
-      "Private driveway access up to 3 floors",
-      "Ample multi-level parking",
+      "Private driveway access up to 5 floors",
+      "Ample multi-level parking across 5 dedicated floors",
       "Wheelchair accessibility with dedicated ramps",
     ],
   },

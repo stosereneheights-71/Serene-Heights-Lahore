@@ -19,7 +19,8 @@ export default function FullImageSection({
         src={imageUrl}
         alt={imageAlt}
         className="object-fill w-full md:h-full"
-        
+        loading="lazy"
+        decoding="async"
       />
     </section>
   );

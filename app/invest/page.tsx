@@ -73,7 +73,7 @@ export default function InvestPage() {
               iconSrc="/assets/invest/dedicated.png"
               iconAlt="Dedicated Above-Ground Parking Floors"
               title="Dedicated Above-Ground Parking Floors"
-              description="One of Gulberg's biggest commercial constructions is accessed through multiple dedicated above-ground parking levels with direct access via drive-through ramps. This feature enhances tenant convenience, increases footfall, and significantly improves leasing potential."
+              description="One of Gulberg's biggest commercial constructions is accessed through 5 dedicated above-ground parking floors with direct access via drive-through ramps. This feature enhances tenant convenience, increases footfall, and significantly improves leasing potential."
             />
 
             <InvestmentCard

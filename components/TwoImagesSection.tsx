@@ -26,6 +26,8 @@ export default function TwoImagesSection({
             src={leftImageUrl}
             alt={leftImageAlt}
             className="object-fill w-full h-full"
+            loading="lazy"
+            decoding="async"
           />
         </div>
         {/* Right Section - Image (bottom on mobile) */}
@@ -34,6 +36,8 @@ export default function TwoImagesSection({
             src={rightImageUrl}
             alt={rightImageAlt}
             className="object-fill w-full h-full"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </div>
