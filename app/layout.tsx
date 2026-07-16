@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Serene Heights Lahore - A New Standard of Urban Living",
   description: "A landmark 21-storey mixed-use commercial development on Gulberg Main Boulevard, Lahore.",
 };
-
+ 
 export default function RootLayout({
   children,
 }: Readonly<{
