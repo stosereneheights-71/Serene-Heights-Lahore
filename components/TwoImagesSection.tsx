@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { assetPath } from "@/lib/assetPath";
 
 interface TwoImagesSectionProps {
   leftImageUrl: string;
@@ -23,7 +23,7 @@ export default function TwoImagesSection({
         {/* Left Section - Image (top on mobile) */}
         <div className="relative w-full min-h-[400px] h-[60vh] md:h-auto flex items-center justify-center bg-white">
           <img
-            src={leftImageUrl}
+            src={assetPath(leftImageUrl)}
             alt={leftImageAlt}
             className="object-fill w-full h-full"
             loading="lazy"
@@ -33,7 +33,7 @@ export default function TwoImagesSection({
         {/* Right Section - Image (bottom on mobile) */}
         <div className="relative w-full min-h-[400px] h-[60vh] md:h-auto flex items-center justify-center bg-white">
           <img
-            src={rightImageUrl}
+            src={assetPath(rightImageUrl)}
             alt={rightImageAlt}
             className="object-fill w-full h-full"
             loading="lazy"

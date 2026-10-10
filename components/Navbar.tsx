@@ -118,10 +118,6 @@ export default function Navbar() {
               fontFamily: '"Gravesend Sans", sans-serif',
               fontWeight: 500,
             }}
-            onClick={(e) => {
-              e.preventDefault();
-              window.location.href = "/contact";
-            }}
           >
             contact us
           </motion.button>
@@ -258,10 +254,7 @@ export default function Navbar() {
                     fontFamily: '"Gravesend Sans", sans-serif',
                     fontWeight: 500,
                   }}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = "/contact";
-                  }}
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   CONTACT US
                 </motion.button>

@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { SITE_URL } from '@/lib/site';
 
 const quickLinks = [
   { name: 'Home', href: '/' },
@@ -43,8 +44,8 @@ const contactInfo = [
   },
   {
     icon: '/assets/footer/global.svg',
-    text: 'sereneheightslahore.com',
-    href: 'https://sereneheightslahore.com',
+    text: 'sereneheightsgroup.com/lahore',
+    href: SITE_URL,
   },
   {
     icon: '/assets/footer/location.svg',

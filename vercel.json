@@ -1,0 +1,82 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/lahore",
+      "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/lahore",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/lahore/about",
+      "permanent": true
+    },
+    {
+      "source": "/the-project",
+      "destination": "/lahore/the-project",
+      "permanent": true
+    },
+    {
+      "source": "/theproject",
+      "destination": "/lahore/the-project",
+      "permanent": true
+    },
+    {
+      "source": "/amenities",
+      "destination": "/lahore/amenities",
+      "permanent": true
+    },
+    {
+      "source": "/invest",
+      "destination": "/lahore/invest",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/lahore/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/lahore/contact",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "sereneheightslahore.com" }],
+      "destination": "https://www.sereneheightslahore.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "sereneheightsgroup.com" }],
+      "destination": "https://www.sereneheightsgroup.com/:path*",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/assets/:path*",
+      "destination": "/lahore/assets/:path*"
+    },
+    {
+      "source": "/fonts/:path*",
+      "destination": "/lahore/fonts/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        }
+      ]
+    }
+  ]
+}

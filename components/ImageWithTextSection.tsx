@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { assetPath } from "@/lib/assetPath";
 
 interface ImageWithTextSectionProps {
   imageUrl: string;
@@ -30,7 +31,7 @@ export default function ImageWithTextSection({
         {/* Left Section - Image (top on mobile) */}
         <div className="relative w-full min-h-[400px] h-[60vh] md:h-auto flex items-center justify-center bg-white">
           <img
-            src={imageUrl}
+            src={assetPath(imageUrl)}
             alt={imageAlt}
             className="object-fill w-full h-full"
             loading="lazy"

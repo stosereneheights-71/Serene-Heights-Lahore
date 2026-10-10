@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { assetPath } from "@/lib/assetPath";
 import { motion } from "framer-motion";
 import HeroSection from "@/components/HeroSection";
 
@@ -46,7 +47,7 @@ export default function Home() {
             playsInline
             className="w-full h-full md:object-fill object-cover"
           >
-            <source src="/assets/home/hero.mp4" type="video/mp4" />
+            <source src={assetPath("/assets/home/hero.mp4")} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

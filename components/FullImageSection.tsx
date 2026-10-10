@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { assetPath } from "@/lib/assetPath";
 
 interface FullImageSectionProps {
   imageUrl: string;
@@ -16,11 +16,12 @@ export default function FullImageSection({
   return (
     <section className="relative w-full md:h-screen bg-white">
       <img
-        src={imageUrl}
+        src={assetPath(imageUrl)}
         alt={imageAlt}
         className="object-fill w-full md:h-full"
         loading="lazy"
         decoding="async"
+        style={{ objectPosition }}
       />
     </section>
   );
