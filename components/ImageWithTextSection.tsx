@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/SiteImage";
 import { assetPath } from "@/lib/assetPath";
 
 interface ImageWithTextSectionProps {

@@ -1,7 +1,7 @@
 "use client";
 
 
-import Image from "next/image";
+import Image from "@/components/SiteImage";
 import SectionHeader from "@/components/SectionHeader";
 import AmenityGrid from "@/components/AmenityGrid";
 

@@ -1,6 +1,6 @@
 
 import React from "react";
-import Image from "next/image";
+import Image from "@/components/SiteImage";
 
 const ManagementAssuranceCard: React.FC = () => (
   <div className="bg-white overflow-visible h-full relative">
